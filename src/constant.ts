@@ -5,6 +5,7 @@ export default interface FloatingTextType {
   speed: "fast" | "med" | "slow";
   route?: "/about" | "/work" | "/contact" | "/";
   isHomeLink?: boolean;
+  isMobile?: boolean;
 }
 
 export const aboutPageContent: string[] = [

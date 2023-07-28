@@ -240,3 +240,102 @@ h1 {
   font-weight: 800;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .homepage h1 {
+    font-size: 5em;
+  }
+  .homepage {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .about-page {
+    margin-top: 9em;
+  }
+
+  .about-title {
+    font-size: 4em;
+    text-align: left;
+    line-height: 0.9em;
+  }
+
+  .about-sub-title {
+    margin: 10% 0;
+    font-size: medium;
+  }
+
+  .about-para {
+    margin: 10% 0;
+    font-size: medium;
+  }
+  .download-link {
+    margin: 10% 0;
+  }
+
+  .work-page-title {
+    /* margin: 0; */
+    margin-top: 2em;
+    font-size: 6em;
+  }
+
+  .work-page h1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .work-page-cont {
+    align-items: flex-start;
+    margin-top: 0;
+    gap: 4em;
+  }
+
+  .work-card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .work-card h1 {
+    font-size: 1.5em;
+  }
+  .work-card p {
+    margin-left: 0;
+  }
+
+  .work-card:hover {
+    margin: 0;
+  }
+
+  .contact-page h1 {
+    font-size: 4em;
+    margin-top: 2em;
+  }
+}
+body {
+  overflow-x: hidden !important;
+}
+
+.homepage {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+.touch {
+  color: black;
+  font-weight: 700;
+  font-size: x-large;
+  margin-top: 70%;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

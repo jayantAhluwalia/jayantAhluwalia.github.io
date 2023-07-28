@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FloatingTextType from "../constant";
 import { Outlet, Link } from "react-router-dom";
 
 const FloatingText = (props: FloatingTextType) => {
-  const { introText, afterText, isHello, speed, route, isHomeLink } = props;
+  const { introText, afterText, isHello, speed, route, isHomeLink, isMobile } =
+    props;
   const [text, setText] = useState(introText);
   const handleHover = (e: any) => {
     e.target.classList.add("slide");
@@ -25,6 +26,15 @@ const FloatingText = (props: FloatingTextType) => {
         break;
     }
   };
+
+  useEffect(() => {
+    if (isMobile) {
+      setText(afterText);
+    }
+    if (!isMobile) {
+      setText(introText);
+    }
+  }, [isMobile]);
 
   return (
     <div className={isHomeLink ? "home-link" : "hello-text"}>
