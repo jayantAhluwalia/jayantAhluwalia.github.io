@@ -15,6 +15,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 /* #root {
   max-width: 1280px;
   max-height: 100vh;
@@ -30,8 +36,7 @@
 } */
 
 .homepage {
-  width: 100vh;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,22 +50,21 @@ h1 {
 }
 
 .no-red-text {
-  color: black
+  color: black;
 }
 
-
 .animate-fast {
-  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.2s forwards; 
+  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.2s forwards;
   transform-origin: bottom;
   transition: left 0.3s ease-in-out, opacity 0.3s;
 }
 .animate-med {
-  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.3s forwards; 
+  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.3s forwards;
   transform-origin: bottom;
   transition: left 0.3s ease-in-out, opacity 0.3s;
 }
 .animate-slow {
-  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.4s forwards; 
+  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.4s forwards;
   transform-origin: bottom;
   transition: left 0.3s ease-in-out, opacity 0.3s;
 }
@@ -84,3 +88,66 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-title {
+  line-height: 0.9em;
+  margin: 5% 10%;
+  font-size: 8em;
+}
+
+.about-para {
+  color: black;
+  margin: 3% 25%;
+  font-size: larger;
+}
+
+.about-sub-title {
+  margin: 0 25%;
+  color: black;
+  font-size: larger;
+}
+
+.fixedButton{
+  position: fixed;
+  top: 0px;
+  right: 0px; 
+  padding: 20px;
+}
+.roundedFixedBtn{
+height: 60px;
+line-height: 80px;  
+width: 60px;  
+font-size: 2em;
+font-weight: bold;
+border-radius: 50%;
+background-color: #4CAF50;
+color: white;
+text-align: center;
+cursor: pointer;
+}
+
+.home-link {
+  font-size: 0.15em;
+}
+
+.home-link h1 {
+  color: black;
+}
+
+.download-link {
+  width: 100%;
+  text-decoration: none;
+  font-weight: 900;
+  color: red;
+  font-size: larger;
+  text-align: left;
+  margin: 0% 25%;
+}
+
