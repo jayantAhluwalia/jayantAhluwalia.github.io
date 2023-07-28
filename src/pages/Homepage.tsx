@@ -3,7 +3,7 @@ import "../index.css";
 
 const Homepage = () => {
   return (
-    <>
+    <div className="homepage">
       <FloatingText
         introText={"Hello."}
         afterText={"About"}
@@ -25,7 +25,7 @@ const Homepage = () => {
         speed="slow"
         route="/contact"
       />
-    </>
+    </div>
   );
 };
 
