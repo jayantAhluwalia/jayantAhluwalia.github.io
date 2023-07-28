@@ -18,7 +18,7 @@ const About = () => {
       </h2>
 
       {aboutPageContent.map((content, idx) => {
-        return <Para content={content} />;
+        return <Para content={content} first={idx === 0}/>;
       })}
       <HomeLink />
       <div className="download-link">
