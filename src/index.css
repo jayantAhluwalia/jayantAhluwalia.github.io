@@ -24,8 +24,8 @@ body,
 /* #root {
   max-width: 1280px;
   max-height: 100vh;
-  margin: 0 auto;
-  padding: 4rem;
+  height: 100%;
+  margin: 0 auto; 
   text-align: center;
 } */
 
@@ -41,6 +41,7 @@ body,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* margin-top: 30%; */
 }
 
 h1 {
@@ -94,6 +95,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("/public/Untitled_design_4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-title {
@@ -114,23 +118,23 @@ h1 {
   font-size: larger;
 }
 
-.fixedButton{
+.fixedButton {
   position: fixed;
   top: 0px;
-  right: 0px; 
+  right: 0px;
   padding: 20px;
 }
-.roundedFixedBtn{
-height: 60px;
-line-height: 80px;  
-width: 60px;  
-font-size: 2em;
-font-weight: bold;
-border-radius: 50%;
-background-color: #4CAF50;
-color: white;
-text-align: center;
-cursor: pointer;
+.roundedFixedBtn {
+  height: 60px;
+  line-height: 80px;
+  width: 60px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  cursor: pointer;
 }
 
 .home-link {
@@ -151,3 +155,59 @@ cursor: pointer;
   margin: 0% 25%;
 }
 
+.work-page {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work-page-title {
+  margin-bottom: 1em;
+}
+
+.work-page-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* margin-top: 40%; */
+}
+
+.work-page-cont h1 {
+  font-size: 5em;
+}
+
+.work-page p {
+  color: black;
+  margin-left: 1em;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.work-card h1 {
+  padding: 0;
+  font-size: 3em;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  color: black;
+  margin: 2em;
+  transition: margin-left 0.3s ease;
+}
+.work-card:hover {
+  margin: -20px;
+}
+
+/* .work-card ul {
+  transition: margin-left 0.3s ease;
+}
+.work-card ul:hover {
+} */

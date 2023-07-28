@@ -33,7 +33,10 @@ const FloatingText = (props: FloatingTextType) => {
         onMouseOver={handleHover}
         onMouseLeave={() => setText(introText)}
       >
-        <Link to={route} style={{ textDecoration: "none", color: "inherit" }}>
+        <Link
+          to={route as string}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
           {text}
         </Link>
       </h1>
