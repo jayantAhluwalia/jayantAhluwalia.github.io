@@ -1,0 +1,68 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* html {
+  background: url('/public/profile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+h1 {
+  color: red;
+  font-size: 10em;
+}
+
+.no-red-text {
+  color: white
+}
+
+
+.animate-fast {
+  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.2s forwards; 
+  transform-origin: bottom;
+  transition: left 0.3s ease-in-out, opacity 0.3s;
+}
+.animate-med {
+  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.3s forwards; 
+  transform-origin: bottom;
+  transition: left 0.3s ease-in-out, opacity 0.3s;
+}
+.animate-slow {
+  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.4s forwards; 
+  transform-origin: bottom;
+  transition: left 0.3s ease-in-out, opacity 0.3s;
+}
+
+.slide {
+  cursor: pointer;
+  transition: margin-left 0.3s ease;
+}
+
+.slide:hover {
+  margin-left: -20px;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
