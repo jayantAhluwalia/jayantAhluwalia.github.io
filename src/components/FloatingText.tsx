@@ -1,8 +1,9 @@
 import { useState } from "react";
 import FloatingTextType from "../constant";
+import { Outlet, Link } from "react-router-dom";
 
 const FloatingText = (props: FloatingTextType) => {
-  const { introText, afterText, isHello, speed} = props;
+  const { introText, afterText, isHello, speed, route} = props;
   const [text, setText] = useState(introText);
   const handleHover = (e: any) => {
     e.target.classList.add("slide");
@@ -12,18 +13,18 @@ const FloatingText = (props: FloatingTextType) => {
   const handleSpeed = (speed: string) => {
     switch (speed) {
       case "fast":
-        return "animate-fast"
+        return "animate-fast";
         break;
       case "med":
-        return "animate-med"
-        break
+        return "animate-med";
+        break;
       case "slow":
-        return "animate-slow"
-        break
+        return "animate-slow";
+        break;
       default:
         break;
     }
-  }
+  };
 
   return (
     <div className="hello-text">
@@ -32,7 +33,7 @@ const FloatingText = (props: FloatingTextType) => {
         onMouseOver={handleHover}
         onMouseLeave={() => setText(introText)}
       >
-        {text}
+        <Link to={route} style={{"textDecoration": "none", "color":"inherit"}}>{text}</Link>
       </h1>
     </div>
   );

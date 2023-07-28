@@ -3,5 +3,6 @@ export default interface FloatingTextType {
   afterText: string
   isHello?: boolean
   speed: "fast" | "med" | "slow"
+  route: "/about" | "/work" | "/contact"
 }
 
