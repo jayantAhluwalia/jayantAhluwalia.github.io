@@ -32,9 +32,9 @@ const Homepage = () => {
   return (
     <div
       className="homepage"
-      onTouchStart={() => (touch ? setTouch(false) : setTouch(true))}
+      onTouchEnd={() => (touch ? setTouch(false) : setTouch(true))}
     >
-      <div className="float-text" onTouchStart={() => setTouchOnText(true)}>
+      <div className="float-text" onTouchEnd={() => setTouchOnText(true)}>
         <FloatingText
           introText={"Hello."}
           afterText={"About"}
@@ -45,7 +45,7 @@ const Homepage = () => {
         />
       </div>
 
-      <div className="float-text" onTouchStart={() => setTouchOnText(true)}>
+      <div className="float-text" onTouchEnd={() => setTouchOnText(true)}>
         <FloatingText
           introText={"I am"}
           afterText={"Work"}
@@ -55,7 +55,7 @@ const Homepage = () => {
           isMobile={isMobile && touch}
         />
       </div>
-      <div className="float-text" onTouchStart={() => setTouchOnText(true)}>
+      <div className="float-text" onTouchEnd={() => setTouchOnText(true)}>
         <FloatingText
           introText={"Jayant"}
           afterText={"Contact"}
