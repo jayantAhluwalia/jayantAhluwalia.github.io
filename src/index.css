@@ -95,9 +95,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/public/Untitled_design_4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .about-title {
