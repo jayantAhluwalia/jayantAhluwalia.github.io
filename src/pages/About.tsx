@@ -18,13 +18,13 @@ const About = () => {
       </h2>
 
       {aboutPageContent.map((content, idx) => {
-        return <Para content={content} first={idx === 0}/>;
+        return <Para content={content} first={idx === 0} />;
       })}
       <HomeLink />
       <div className="download-link">
         <a
           href="public/Full stack developer - Jayant Ahluwalia.pdf"
-          download={true}
+          download={"Full stack developer - Jayant Ahluwalia"}
           className="download-link"
         >
           Click to download Resume
