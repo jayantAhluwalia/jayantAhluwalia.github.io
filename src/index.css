@@ -201,9 +201,10 @@ h1 {
   width: 70%;
   color: black;
   margin: 2em;
-  transition: margin-left 0.3s ease;
+  transition: margin-left 0.9s ease;
 }
 .work-card:hover {
+  transition: 0.9s ease;
   margin: -20px;
 }
 
