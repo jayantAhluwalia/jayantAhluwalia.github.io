@@ -23,7 +23,7 @@ const About = () => {
       <HomeLink />
       <div className="download-link">
         <a
-          href="public/Full stack developer - Jayant Ahluwalia.pdf"
+          href="src/assets/Full stack developer - Jayant Ahluwalia.pdf"
           download={"Full stack developer - Jayant Ahluwalia"}
           className="download-link"
         >
