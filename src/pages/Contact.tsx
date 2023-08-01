@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="contact-cont">
         <p>{contactDescription}</p>
         <a href="https://www.linkedin.com/in/jayant-ahluwalia-418a46187/">
-          Linkdin
+          Linkedin
         </a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jayantahluwalia07@gmail.com">
           Email
