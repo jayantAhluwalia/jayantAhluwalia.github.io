@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import HomeLink from "../components/HomeLink";
 import Para from "../components/Para";
 import { aboutPageContent } from "../constant";

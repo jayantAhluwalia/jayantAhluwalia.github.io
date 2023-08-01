@@ -1,4 +1,3 @@
-import FloatingText from "../components/FloatingText";
 import HomeLink from "../components/HomeLink";
 import WorkCard from "../components/WorkCard";
 import { workContent } from "../constant";

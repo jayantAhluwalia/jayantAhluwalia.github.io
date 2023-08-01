@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import FloatingTextType from "../constant";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const FloatingText = (props: FloatingTextType) => {
   const { introText, afterText, isHello, speed, route, isHomeLink, isMobile } =
@@ -15,13 +15,10 @@ const FloatingText = (props: FloatingTextType) => {
     switch (speed) {
       case "fast":
         return "animate-fast";
-        break;
       case "med":
         return "animate-med";
-        break;
       case "slow":
         return "animate-slow";
-        break;
       default:
         break;
     }
