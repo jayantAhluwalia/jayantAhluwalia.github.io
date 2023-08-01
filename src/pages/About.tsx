@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import HomeLink from "../components/HomeLink";
 import Para from "../components/Para";
 import { aboutPageContent } from "../constant";
+import Resume from "../assets/Full stack developer - Jayant Ahluwalia.pdf";
 
 const About = () => {
   return (
@@ -23,8 +24,10 @@ const About = () => {
       <HomeLink />
       <div className="download-link">
         <a
-          href="src/assets/Full stack developer - Jayant Ahluwalia.pdf"
+          href={Resume}
           download={"Full stack developer - Jayant Ahluwalia"}
+          target="_blank"
+          rel="noopener noreferrer"
           className="download-link"
         >
           Click to download Resume
